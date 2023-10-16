@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="./jsRapPiano/jsRapPiano.css">
     <link rel="stylesheet" href="./earTrainer.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./jsRapPiano/jsRapPiano.js"></script>
+    <script src="jsRapPiano/jsRapPiano.js"></script>
     <!-- <script src="jquery.speak.js"></script> -->
     <script src="earTrainer.js"></script>
     <title>Ear Trainer</title>
@@ -13,6 +13,7 @@
 <body>
     <button onclick="playRandomNote()">Play Random Note</button>
     <button onclick="playNoteAgain()">Play Note Again</button>
+    <button onclick="stopPlayingNote()">Stop Note</button>
     <div class="midi_interfaces">
         MIDI Output:
         <select id="midi_outputs"></select>
@@ -23,6 +24,8 @@
     <div id="noteDisplay"> </div><br /><br />
     <br /><br />
     <div id="pianoInput"></div>
+
+
 </body>
 
 </html>
